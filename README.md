@@ -9,9 +9,9 @@ This template originates to the next templates:
 
 I called it **21 seconds LaTeX template**
 as it has more textual information. So that, it can take more seconds to read.  
-I used it to build my **wed-developer** CV.
+I used it to build my own **JS developer** CV.
 
-![CV Screenshot](cv.png)
+![CV Screenshot](cv_preview.png)
 
 ## How it works (Ubuntu Linux)
 
@@ -24,6 +24,9 @@ It works properly in [Texmaker](http://www.xm1math.net/texmaker/) or [Kile](http
   - texlive-xetex
 
 **Important**: Make sure to compile with XeLaTeX, not PDFLaTeX.
+
+## Updates
+ - 03.02.2020 - update of cv layout and styles
 
 ## License
 

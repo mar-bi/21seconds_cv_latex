@@ -11,7 +11,7 @@
 \def\arrow#1{\pspicture[shift=2pt](#1,0)\psline{->}(#1,0)\endpspicture}
 
 \usepackage[default]{sourcesanspro} %default font
-\usepackage{pstricks}
+%\usepackage{pstricks}
 \usepackage{fontawesome}
 \RequirePackage{tikz}
 \RequirePackage{xcolor}
@@ -33,7 +33,7 @@
     pdfauthor={},
     pdfsubject={},
     pdfkeywords={},
-    colorlinks=false,           % no lik border color
+    colorlinks=false,           % no link border color
     allbordercolors=white       % white border color for all
 }
 
@@ -185,6 +185,21 @@
 	}
 }
 
+% Command for printing working experience
+\newcommand\jobs[1]{
+	\renewcommand{\jobs}{
+		{#1}
+	}
+}
+
+% Command for printing education
+\newcommand\education[1]{
+	\renewcommand{\education}{
+		{#1}
+	}
+}
+
+
 %-------------------------------------------------------------------------------
 %  SIDEBAR LAYOUT
 %-------------------------------------------------------------------------------
@@ -208,7 +223,7 @@
 
     {\Large\color{black!80}\cvjobtitle} %title
 
-    {\color{materialteal}\cvlocation} %location
+    {\color{materialblue}\cvlocation} %location
 
     %------------------------------------------------
 
@@ -258,23 +273,27 @@
     %------------------------------------------------
     \vspace{3mm}
 
-    \profilesection{Skills}{4cm}
+    %\profilesection{Skills}{4cm}
 
-    {\large \textbf{Overview}}
+    {\large \textbf{Skills}}
 
-	\skills
-
-    \vspace{3mm}
-
-	{\large \textbf{Certificates}}
-
-	\certificates
+	  \skills
 
     \vspace{3mm}
+    
+    {\large \textbf{Education}}
+    
+	  \education
+	
+	  \vspace{3mm}
+	
+	  {\large \textbf{Certificates}}
+	
+	  \certificates
 
-    \profilesection{Projects}{3cm}
+    %\profilesection{Work experience}{1cm}
 
-    \projects
+    %\jobs
 
   \end{textblock}
 }
@@ -363,7 +382,7 @@
     bubble center node font = \footnotesize,
     bubble node font = \footnotesize,
     % specifies the minimum size of the bubble center node
-    bubble center node size = 0.5cm,
+    bubble center node size = 2cm,
     %  specifies the minimum size of the bubbles
     bubble node size = 0.5cm,
     % specifies which is the distance among the bubble center node and the other bubbles

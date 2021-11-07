@@ -27,6 +27,7 @@ It works properly in [Texmaker](http://www.xm1math.net/texmaker/) or [Kile](http
 
 ## Updates
  - 03.02.2020 - update of cv layout and styles
+ - 07.11.2021 - update of cv data
 
 ## License
 

@@ -199,6 +199,13 @@
 	}
 }
 
+% Command for printing languages
+\newcommand\languages[1]{
+	\renewcommand{\languages}{
+		{#1}
+	}
+}
+
 
 %-------------------------------------------------------------------------------
 %  SIDEBAR LAYOUT
@@ -277,19 +284,25 @@
 
     {\large \textbf{Skills}}
 
-	  \skills
+	\skills
 
     \vspace{3mm}
     
     {\large \textbf{Education}}
     
-	  \education
+	\education
 	
-	  \vspace{3mm}
+	%\vspace{3mm}
+	  
+	{\large \textbf{Languages}}
 	
-	  {\large \textbf{Certificates}}
+	\languages
+	  
+	\vspace{3mm}
 	
-	  \certificates
+	{\large \textbf{Certificates}}
+	
+	\certificates
 
     %\profilesection{Work experience}{1cm}
 
